@@ -1,9 +1,8 @@
 var express = require('express');
 var router = express.Router();
 const Users = require('../models/users');
-//to add new device if  it is not present 
 
-router.post('/post', (req, res, next) => {      //checking for already existing device
+router.post('/post', (req, res, next) => {      //checking for already existing users
     var newUser = req.body;
     var Id = newUser.username;
     Users.getUserbyId(Id,(err,user)=>{
