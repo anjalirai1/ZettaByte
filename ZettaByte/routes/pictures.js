@@ -1,4 +1,4 @@
-kjconst mongoose  = require('mongoose');
+const mongoose  = require('mongoose');
 const Picture = require('../models/picture');
 module.exports = function() {
     return {
